@@ -1,0 +1,11 @@
+<svg width="109" height="57" viewBox="0 0 109 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M68 42.39C68 41.3438 68.9096 40.53 69.9493 40.6459L101.251 44.136C105.227 44.5794 108.591 41.226 108.161 37.2483C107.713 33.1161 103.434 30.5622 99.5844 32.1306L70.4171 44.0151C69.2629 44.4854 68 43.6363 68 42.39Z" fill="url(#paint0_linear_2205_14)"/>
+  <text x="0" y="45" font-family="Nothing You Could Do" font-weight="bold" font-style="italic" font-size="36" fill="white">David</text>
+  <defs>
+    <linearGradient id="paint0_linear_2205_14" x1="219.1" y1="39.9983" x2="202.599" y2="91.4037" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#361C6A"/>
+      <stop offset="1" stop-color="#844EF3"/>
+    </linearGradient>
+  </defs>
+</svg>
+
