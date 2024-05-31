@@ -23,7 +23,7 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-        alert(data.message);
+      alert(data.message);
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
@@ -49,12 +49,16 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src={mailicon} alt="" /> <p>davidramovichmandal@gmail.com</p>
+              <img src={mailicon} alt="" />
+              <a
+                href="mailto:davidramovichmandal@gmail.com"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                davidramovichmandal@gmail.com
+              </a>
             </div>
 
-            <div className="contact-detail">
-              <img src={callicon} alt="" /> <p>+977-9854024755</p>
-            </div>
+            
 
             <div className="contact-detail">
               <img src={locationicon} alt="" /> <p>Kathmandu</p>
