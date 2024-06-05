@@ -41,10 +41,12 @@
     padding: 50px;
 
 }
-.mywork-item p{
+/* .mywork-item p{
     margin-bottom: 10px;
 
-}
+} */
+
+
 
 .mywork-item:hover{
     transform: scale(1.10);

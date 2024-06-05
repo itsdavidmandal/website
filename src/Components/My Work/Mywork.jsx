@@ -17,6 +17,20 @@ const Mywork = () => {
             <div key={work.w_no} className="mywork-item">
               <h2>{work.w_title}</h2>
               <p>{work.w_desc}</p>
+              <a
+                href={work.w_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  marginTop: "5px",
+                  marginBottom: "50px"
+                }}
+              >
+                View Project
+              </a>
+
               <div className="mywork-showmore-mini">
                 <p>Show More</p>
                 <img src={arrowicon} alt="" />
@@ -25,10 +39,10 @@ const Mywork = () => {
           );
         })}
       </div>
-      <div className="mywork-showmore">
+      {/* <div className="mywork-showmore">
         <p>Show More</p>
         <img src={arrowicon} alt="" />
-      </div>
+      </div> */}
     </div>
   );
 };

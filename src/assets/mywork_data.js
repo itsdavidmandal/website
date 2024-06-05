@@ -4,7 +4,8 @@ const mywork_data = [
     {
         w_no:1,
         w_title:"Simple Quiz Website",
-        w_desc :"A simnple website for quiz competitions"
+        w_desc :"A simnple website for quiz competitions",
+        w_link : "https://quizappusingreact.netlify.app/"
     },
     {
         w_no:2,
