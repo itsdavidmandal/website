@@ -46,10 +46,13 @@ const Mywork = () => {
           );
         })}
       </div>
+
+      {/* shall re vitalise the code below when more projects shall be added  */}
       {/* <div className="mywork-showmore">
         <p>Show More</p>
         <img src={arrowicon} alt="" />
-      </div> */}
+      </div> */} 
+      
     </div>
   );
 };
