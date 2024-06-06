@@ -34,7 +34,7 @@
 .mywork-item{
     box-sizing: border-box;
     width: 419px;
-    height: 270px;
+    height: 230px;
     transition: 0.3s;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -104,7 +104,7 @@
     transition: 0.6s;
     cursor: pointer;
     width: 180px;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 
