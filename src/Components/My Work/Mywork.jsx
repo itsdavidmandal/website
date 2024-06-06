@@ -15,8 +15,14 @@ const Mywork = () => {
         {mywork_data.map((work) => {
           return (
             <div key={work.w_no} className="mywork-item">
+              <div className="title-wala-edit">
               <h2>{work.w_title}</h2>
+              </div>
+
               <p>{work.w_desc}</p>
+
+              <div className="show-project">
+                
               <a
                 href={work.w_link}
                 target="_blank"
@@ -24,12 +30,13 @@ const Mywork = () => {
                 style={{
                   textDecoration: "none",
                   color: "white",
-                  marginTop: "5px",
-                  marginBottom: "50px"
+                  // marginTop: "5px",
+                  // marginBottom: "50px"
                 }}
               >
                 View Project
               </a>
+              </div>
 
               <div className="mywork-showmore-mini">
                 <p>Show More</p>
