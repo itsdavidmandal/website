@@ -6,6 +6,7 @@ import Services from './Components/Services/Services'
 import Mywork from './Components/My Work/Mywork'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
+import { BackgroundBeams } from './Components/ui/background-beams'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Mywork/>
       <Contact/>
       <Footer/>
+      <BackgroundBeams/>
     </div>
   )
 }

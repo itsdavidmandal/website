@@ -42,14 +42,14 @@ const Contact = () => {
         <div className="contact-left">
           <h1>Let's Talk</h1>
           <p>
-            <p>
+            {/* <p> */}
               From simple portfolio sites to comprehensive e-commerce platforms,
               I'm dedicated to turning your ideas into digital realities. If
               you're seeking to elevate your online presence or simply curious
               about how we can collaborate, feel free to reach out to me via
               email or give me a call. Let's embark on this exciting journey
               together!
-            </p>
+            {/* </p> */}
           </p>
           <div className="contact-details">
             <div className="contact-detail">

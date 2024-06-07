@@ -11,7 +11,6 @@
     position: relative;
 
 }
-
 .about-title h1{
     padding: 0px 30px;
     font-size: 80px;
@@ -93,11 +92,29 @@
 .about-achievement h1{
     font-size: 60px;
     font-weight: 700;
+    perspective: 1000px; /* Perspective for 3D positioning */
     background: linear-gradient(270deg , #361C6A 10% , #844EF3 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+  
+  .about-achievement h1 span {
+    display: inline-block;
+    position: relative;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
 
 .about-achievement p {
     font-size: 22px;
