@@ -8,7 +8,6 @@ import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import { BackgroundBeams } from './Components/ui/background-beams'
 
-
 const App = () => {
   return (
     <div>

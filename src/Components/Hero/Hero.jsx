@@ -1,28 +1,42 @@
 import React from "react";
 import "./Hero.css";
-import profileimg from "../../assets/profile_img.svg";
+import profileimg from "../../assets/profile_img.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import resumeFile from "../../assets/resume.pdf"; // Import your resume file
+
 const Hero = () => {
+  const [text] = useTypewriter({
+    words: ["Web Developer", "Prompt Engineer", "Bibliophile"],
+    loop: true,
+    typeSpeed: 70, // typing speed
+    deleteSpeed: 50, // deleting speed
+    delaySpeed: 1000,
+  });
+
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = resumeFile;
+    link.download = "resume.pdf"; // Set the desired file name for the download
+    link.click();
+  };
+
   return (
     <div id="home" className="hero">
-      <img src={profileimg} alt="" />
-      <h1>
-        {" "}
-        <span> I am David Mandal , </span>web developer based in Nepal
+      <img src={profileimg} alt="" style={{}} />
+      <h1 style={{ textAlign: "center", marginTop: "350px" }}>
+        I am David Mandal , <br /> <span> {text}</span>
       </h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsum
-        necessitatibus quaerat magnam deleniti, impedit libero quisquam harum
-        nostrum eos, nihil, debitis culpa possimus distinctio explicabo vitae.
-        Necessitatibus, suscipit pariatur.
-      </p>
+
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink className="anchor-link" offset={50} href="#contact">
             Connect With Me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My Resume</div>
+        <div className="hero-resume" onClick={handleDownloadResume}>
+          Download My Resume
+        </div>
       </div>
     </div>
   );

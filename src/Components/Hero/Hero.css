@@ -6,7 +6,10 @@
 }
 
 .hero img {
-    margin-top: 150px;
+    z-index: 1;
+    position: absolute;
+    
+
 
 }
 .hero h1{
@@ -14,6 +17,9 @@
     width: 70%;
     font-size: 90px;
     font-weight: 600;
+    z-index: 2;
+    position: relative;
+
 
 }
 
@@ -37,6 +43,7 @@
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 50px;
+    margin-top: 50px;
 
 }
 
