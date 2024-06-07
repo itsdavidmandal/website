@@ -129,7 +129,7 @@ const About = () => {
         <OdometerAnimation
           triggerValue={0.5}
           endValue={15}
-          label="Happy Clients"
+          label="Certificates"
         />
       </div>
     </div>
