@@ -49,11 +49,16 @@
 
 }
 
-.hero h1 span{
+.hero h1 .typewriter-anim{
     background: linear-gradient(270deg , #361C6A 10% , #844EF3 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    height: 150px;
+    padding: 10px;
+    font-size: 90px;
+    width: 100%;
+    margin-top: 15px;
 }
 .hero p{
     width: 50%;

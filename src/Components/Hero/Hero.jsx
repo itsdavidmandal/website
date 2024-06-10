@@ -24,18 +24,22 @@ const Hero = () => {
   const [loading, setLoading] = useState(true);
 
   const handleImageLoad = () => {
+    console.log("load false");
     setLoading(false);
   };
 
   return (
     <div id="home" className="hero">
-
-      <img src={profileimg}  alt="Profile"
+      {loading && <p style={{ color: "white" }}>Loading...</p>}
+      <img
+        src={profileimg}
+        alt="Profile"
         onLoad={handleImageLoad}
-        className={loading ? "hidden" : ""}/>
+        className={loading ? "hidden" : ""}
+      />
 
       <h1 style={{ textAlign: "center", marginTop: "350px" }}>
-        I am David Mandal , <br /> <span> {text}</span>
+        I am David Mandal , <br />  <p className ="typewriter-anim" > {text}</p>
       </h1>
 
       <div className="hero-action">
