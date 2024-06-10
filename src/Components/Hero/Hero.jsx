@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Hero.css";
 import profileimg from "../../assets/profile_img.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -21,9 +21,19 @@ const Hero = () => {
     link.click();
   };
 
+  const [loading, setLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setLoading(false);
+  };
+
   return (
     <div id="home" className="hero">
-      <img src={profileimg} alt="" style={{}} />
+
+      <img src={profileimg}  alt="Profile"
+        onLoad={handleImageLoad}
+        className={loading ? "hidden" : ""}/>
+
       <h1 style={{ textAlign: "center", marginTop: "350px" }}>
         I am David Mandal , <br /> <span> {text}</span>
       </h1>

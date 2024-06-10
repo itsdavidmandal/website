@@ -34,7 +34,7 @@
 .mywork-item{
     box-sizing: border-box;
     width: 419px;
-    height: 230px;
+    height: 200px;
     transition: 0.3s;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -50,6 +50,7 @@
     margin-top: 10px;
 }
 .title-wala-edit{
+    font-size: 38px;
     background: linear-gradient(270deg , #361C6A 10% , #844EF3 100%);
     background-clip: text;
     -webkit-background-clip: text;

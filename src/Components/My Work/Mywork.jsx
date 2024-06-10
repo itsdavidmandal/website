@@ -37,11 +37,11 @@ const Mywork = () => {
                 View Project
               </a>
               </div>
-
+{/* 
               <div className="mywork-showmore-mini">
                 <p>Show More</p>
                 <img src={arrowicon} alt="" />
-              </div>
+              </div> */}
             </div>
           );
         })}
